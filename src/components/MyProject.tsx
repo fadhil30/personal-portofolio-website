@@ -22,7 +22,7 @@ export default function MyProject() {
       link: "#",
     },
     {
-      projectTitle: "Tinder App",
+      projectTitle: "Find House App",
       description:
         "Starting from the basics, I learned how to build an application designed to help people find rental accommodations (kos-kosan) worldwide. The app integrates with APIs to store crucial data, such as property details and more. Additionally, I gained hands-on experience in transforming designs from Figma into functional code using Flutter SDK, Visual Studio Code, and Dart.",
       image: findHouseApp,
