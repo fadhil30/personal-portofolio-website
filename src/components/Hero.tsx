@@ -5,7 +5,10 @@ import linkedInLogo from "../assets/linkedin-logo.svg";
 import twitterLogo from "../assets/twitter-logo.svg";
 export default function Hero() {
   return (
-    <div className="flex flex-col md:flex-row py-16 px-8 md:py-24 md:px-20 m-0 justify-between items-center gap-8">
+    <div
+      id="home"
+      className="flex flex-col md:flex-row py-16 px-8 md:py-24 md:px-20 m-0 justify-between items-center gap-8"
+    >
       <div className="flex flex-col text-pure-white max-w-3xl">
         <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
           Hi, I'm Fadhil 👋
