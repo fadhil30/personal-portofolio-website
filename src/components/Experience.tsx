@@ -5,13 +5,13 @@ import googleLogo from "../assets/google-logo.png";
 export default function Experience() {
   const experiences = [
     {
-      company: "M-Knows COnsulting",
+      company: "M-Knows Consulting",
       companyLogo: mknowsLogo,
       role: "iOS Developer",
       period: "Feb 2023 - Jul 2023",
       description: [
         "Developing KampusGratis App",
-        "Creating various feature",
+        "Creating various features",
         "Deployment to AppStore",
       ],
     },
@@ -51,31 +51,32 @@ export default function Experience() {
         <div className="w-full max-w-4xl mt-8 space-y-8">
           {experiences.map((exp, index) => (
             <div
-              className="bg-gray-200 grid grid-cols-3 gap-10 p-8 rounded-xl mt-12 shadow-lg"
+              className="bg-gray-200 grid grid-cols-1 md:grid-cols-3 gap-6 p-8 rounded-xl shadow-lg"
               key={index}
             >
-              <div className="flex-shrink-0">
+              {/* Logo */}
+              <div className="flex flex-col items-center md:items-start">
                 <img
                   className="h-12 w-auto"
                   src={exp.companyLogo}
                   alt={exp.company}
                 />
+                <span className="text-sm md:text-base text-gray-700 mt-4">
+                  {exp.period}
+                </span>
               </div>
 
-              <div className="flex-1">
+              {/* Role and Description */}
+              <div className="col-span-2 flex flex-col items-center md:items-start space-y-4">
                 <h3 className="text-lg md:text-xl font-semibold text-gray-900">
                   {exp.role}
                 </h3>
-                <ul className="text-sm md:text-base text-gray-700 mt-4 list-disc pl-6">
+                <ul className="text-sm md:text-base text-gray-700 list-disc pl-6">
                   {exp.description.map((item, idx) => (
                     <li key={idx}>{item}</li>
                   ))}
                 </ul>
               </div>
-
-              <span className="text-sm md:text-base text-gray-700 md:ml-auto md:self-start">
-                {exp.period}
-              </span>
             </div>
           ))}
         </div>

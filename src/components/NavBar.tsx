@@ -9,12 +9,12 @@ export default function NavBar() {
   };
 
   return (
-    <nav className="fixed w-full bg-default z-10 px-4 md:px-28 py-4">
-      <div className="flex items-center justify-between">
+    <nav className="fixed w-full bg-default z-10 px-4 md:px-12 py-4">
+      <div className="flex items-center justify-between h-12">
         {/* Logo */}
-        <div className="text-lg font-bold text-gray-600">
+        <div className="w-[120px] font-bold text-gray-600">
           <a href="#home">
-            <img className="h-12" src={faithCoLogo} alt="Faith Company Logo" />
+            <img src={faithCoLogo} alt="Faith Company Logo" />
           </a>
         </div>
 

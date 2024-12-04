@@ -1,4 +1,13 @@
 export default function AboutMe() {
+  const quickBits = [
+    "💻 Software developer passionate about intuitive apps.",
+    "🌍 Skilled in iOS & multi-platform development.",
+    "🚀 Notable projects: FavFood’s, Sarang Dating App, KampusGratis, Find House App.",
+    "🛠️ Tools: JavaScript, Swift, ReactJS, TailwindCSS, Figma.",
+    "🌟 Creative, collaborative, problem-solver.",
+    "🌐 Fluent in Indonesian, proficient in English.",
+    "🎯 Let’s bring ideas to life!",
+  ];
   return (
     <section id="about" className="bg-gray-50 py-12 px-6 md:py-24 md:px-20">
       <div className="max-w-7xl mx-auto flex flex-col items-center">
@@ -42,13 +51,10 @@ export default function AboutMe() {
               Let’s create something extraordinary together! <br /> <br />
               Finally, some quick bits about me.
             </p>
-            <ul className="mt-4 list-disc pl-6 text-sm md:text-base font-normal text-gray-600">
-              <li>
-                <p>Front End Mobile Developer</p>
-              </li>
-              <li>
-                <p>Front End Web Developer</p>
-              </li>
+            <ul className="grid grid-rows-2 md:grid-rows-1 md:grid-cols-2 gap-4 mt-8 list-disc pl-6 text-sm md:text-base font-normal text-gray-600">
+              {quickBits.map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
             </ul>
           </div>
         </div>
