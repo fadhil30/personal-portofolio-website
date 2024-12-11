@@ -50,9 +50,9 @@ export default function Testimonials() {
                 {testimonial.feedback}
               </p>
               <div className="flex flex-col items-center">
-                <h4 className="mt-6 text-xl font-semibold text-gray-900">
+                <p className="mt-6 text-xl font-semibold text-gray-900">
                   {testimonial.clientName}
-                </h4>
+                </p>
                 <p className="mt-1 text-sm text-gray-600">
                   {testimonial.clientJob}
                 </p>
