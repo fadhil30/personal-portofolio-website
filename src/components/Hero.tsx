@@ -3,6 +3,7 @@ import iconLocation from "../assets/Icon-location.svg";
 import gitHubLogo from "../assets/github-logo.svg";
 import linkedInLogo from "../assets/linkedin-logo.svg";
 import twitterLogo from "../assets/twitter-logo.svg";
+
 export default function Hero() {
   return (
     <section id="home">
@@ -13,10 +14,10 @@ export default function Hero() {
           </h1>
           <p className="text-sm md:text-base font-normal text-gray-600 mt-2">
             An graduated student of Informatics Engineering at Brawijaya
-            Univeísity that is a knowledge- curious, teamwork, communicative,
-            and quick learner person. I have interest in Front-End Web
-            Developer, Full Stack Web Developer, Apple iOS Developer, and
-            Android Developer.
+            University that is a knowledge-curious, teamwork, communicative, and
+            quick learner person. I have interest in Front-End Web Developer,
+            Full Stack Web Developer, Apple iOS Developer, and Android
+            Developer.
           </p>
           <div className="flex flex-row gap-2 mt-6 md:mt-12">
             <img
@@ -34,21 +35,42 @@ export default function Hero() {
             </li>
           </ul>
           <div className="flex flex-row gap-3 mt-8 md:mt-12">
-            <img
-              className="w-5 h-5 md:w-6 md:h-6"
-              src={gitHubLogo}
-              alt="GitHub Logo"
-            />
-            <img
-              className="w-5 h-5 md:w-6 md:h-6"
-              src={linkedInLogo}
-              alt="LinkedIn Logo"
-            />
-            <img
-              className="w-5 h-5 md:w-6 md:h-6"
-              src={twitterLogo}
-              alt="X Logo"
-            />
+            <a
+              href="https://github.com/fadhil30"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+            >
+              <img
+                className="w-5 h-5 md:w-6 md:h-6"
+                src={gitHubLogo}
+                alt="GitHub Logo"
+              />
+            </a>
+            <a
+              href="https://www.linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+            >
+              <img
+                className="w-5 h-5 md:w-6 md:h-6"
+                src={linkedInLogo}
+                alt="LinkedIn Logo"
+              />
+            </a>
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Twitter"
+            >
+              <img
+                className="w-5 h-5 md:w-6 md:h-6"
+                src={twitterLogo}
+                alt="Twitter Logo"
+              />
+            </a>
           </div>
         </div>
         <img

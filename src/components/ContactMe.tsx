@@ -17,7 +17,14 @@ export default function ContactMe() {
         </p>
         <div className="flex flex-col gap-5 items-center mt-12 w-full max-w-3xl mx-auto">
           <div className="flex flex-row gap-5 justify-center items-center w-full">
-            <img className="w-10" src={iconMail} alt="Icon Mail" />
+            <a
+              href="mailto:fgeminni0@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Email"
+            >
+              <img className="w-10" src={iconMail} alt="Icon Mail" />
+            </a>
             <p className="font-semibold text-2xl text-gray-900">
               fgeminni0@gmail.com
             </p>
@@ -33,9 +40,42 @@ export default function ContactMe() {
           You may also find me on these platforms!
         </p>
         <div className="flex justify-center gap-5 mt-6">
-          <img className="w-6 h-6" src={gitHubLogo} alt="GitHub Logo" />
-          <img className="w-6 h-6" src={linkedInLogo} alt="LinkedIn Logo" />
-          <img className="w-6 h-6" src={twitterLogo} alt="X Logo" />
+          <a
+            href="https://github.com/fadhil30"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+          >
+            <img
+              className="w-5 h-5 md:w-6 md:h-6"
+              src={gitHubLogo}
+              alt="GitHub Logo"
+            />
+          </a>
+          <a
+            href="https://www.linkedin.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+          >
+            <img
+              className="w-5 h-5 md:w-6 md:h-6"
+              src={linkedInLogo}
+              alt="LinkedIn Logo"
+            />
+          </a>
+          <a
+            href="https://twitter.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Twitter"
+          >
+            <img
+              className="w-5 h-5 md:w-6 md:h-6"
+              src={twitterLogo}
+              alt="Twitter Logo"
+            />
+          </a>
         </div>
       </div>
     </section>
