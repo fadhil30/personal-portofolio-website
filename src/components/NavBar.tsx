@@ -9,7 +9,7 @@ export default function NavBar() {
   };
 
   return (
-    <nav className="fixed w-full bg-default z-10 px-4 md:px-12 py-4">
+    <nav className="fixed w-full bg-default z-10 px-8 md:px-20 py-4">
       <div className="flex items-center justify-between h-12">
         {/* Logo */}
         <div className="w-[120px] font-bold text-gray-600">
@@ -20,7 +20,7 @@ export default function NavBar() {
 
         {/* Hamburger Menu for Mobile */}
         <button
-          className="text-gray-600 text-2xl md:hidden"
+          className="text-gray-600 text-2xl lg:hidden"
           onClick={toggleMenu}
         >
           {isOpen ? "✖" : "☰"}
@@ -30,9 +30,9 @@ export default function NavBar() {
         <ul
           className={`${
             isOpen ? "block" : "hidden"
-          } absolute md:relative md:flex md:items-center md:gap-6 bg-default top-16 md:top-0 left-0 w-full md:w-auto py-6 md:py-0 md:pl-0 px-6 md:px-0 transition-all`}
+          } absolute lg:relative lg:flex lg:items-center lg:gap-6 bg-default top-16 lg:top-0 left-0 w-full lg:w-auto py-6 lg:py-0 lg:pl-0 px-6 lg:px-0 transition-all`}
         >
-          <li className="border-b md:border-none border-gray-300 md:pb-0 pb-4">
+          <li className="border-b lg:border-none border-gray-300 lg:pb-0 pb-4">
             <a
               className="text-gray-600 text-base font-medium hover:text-pure-white"
               href="#about"
@@ -40,7 +40,7 @@ export default function NavBar() {
               About
             </a>
           </li>
-          <li className="border-b md:border-none border-gray-300 md:pb-0 pb-4">
+          <li className="border-b lg:border-none border-gray-300 lg:pb-0 pb-4">
             <a
               className="text-gray-600 text-base font-medium hover:text-pure-white"
               href="#work"
@@ -48,7 +48,7 @@ export default function NavBar() {
               Work
             </a>
           </li>
-          <li className="border-b md:border-none border-gray-300 md:pb-0 pb-4">
+          <li className="border-b lg:border-none border-gray-300 lg:pb-0 pb-4">
             <a
               className="text-gray-600 text-base font-medium hover:text-pure-white"
               href="#testimonials"
@@ -56,7 +56,7 @@ export default function NavBar() {
               Testimonials
             </a>
           </li>
-          <li className="border-b md:border-none border-gray-300 md:pb-0 pb-4">
+          <li className="border-b lg:border-none border-gray-300 lg:pb-0 pb-4">
             <a
               className="text-gray-600 text-base font-medium hover:text-pure-white"
               href="#contact"
@@ -64,11 +64,11 @@ export default function NavBar() {
               Contact
             </a>
           </li>
-          <li className="mt-4 md:mt-0">
+          <li className="mt-4 lg:mt-0">
             <a
               href="/CV-ATS-Muhammad Fadhil Hidayatullah.pdf"
               download="CV-ATS-Muhammad-Fadhil-Hidayatullah.pdf"
-              className="w-full md:w-[136px] h-9 bg-pure-white border rounded-xl text-gray-50 font-medium flex items-center justify-center hover:bg-slate-400"
+              className="w-full lg:w-[136px] h-9 bg-pure-white border rounded-xl text-gray-50 font-medium flex items-center justify-center hover:bg-slate-400"
             >
               Download CV
             </a>

@@ -2,31 +2,131 @@ import foodApp from "../assets/foodApp.png";
 import sarangApp from "../assets/SarangApp.png";
 import findHouseApp from "../assets/FindHouseApp.png";
 import shareButton from "../assets/share-button.svg";
+import escoLogo from "../assets/esco-logo.svg";
+import mknowsLogo from "../assets/mknows-logo.svg";
+import githubLogo from "../assets/github-logo.svg";
+import userProfile from "../assets/user.png";
 
 export default function MyProject() {
   const projects = [
     {
-      projectTitle: "Food App",
+      projectTitle: "Revamp RAG Chatbot for escolifesciences.com",
       description:
-        "In the digital era, various companies compete to develop user-friendly and responsive websites and applications. As a result, jobs related to design and development are in high demand today. I work as a UI Engineer, responsible for slicing the Food App design from Figma using Xcode, a development tool for iOS-based applications.",
-      image: foodApp,
-      techStack: ["SwiftUI", "Figma"],
+        "Spearheaded the front-end revitalization of the company’s Retrieval-Augmented Generation (RAG) chatbot, delivering a modern, interactive, and user-centric UI to enhance stakeholder engagement. Containerized the application using Docker for consistent deployment environments and optimized data workflows with Prisma ORM and PostgreSQL.",
+      image: escoLogo,
+      techStack: ["Next.js", "Prisma", "PostgreSQL", "Docker"],
       link: "#",
     },
     {
-      projectTitle: "Dating App",
+      projectTitle: "Assessment Escolab – Learning Management System",
       description:
-        "Learning how to build projects using cutting-edge technology, particularly Flutter SDK, to create an impressive and marketable portfolio that serves as a strong foundation for job hunting. In this project, I explored key concepts such as Auto Login with Local Storage, State Management using Bloc version 8, writing Clean Code by implementing a feature-first folder structure, and leveraging Flutter version 3 with null safety support.",
-      image: sarangApp,
-      techStack: ["Dart", "Flutter", "Figma"],
+        "Engineered a full-stack Learning Management System (LMS) designed for corporate training, implementing a responsive user interface and a robust administrative dashboard. Developed the application adhering to Clean Architecture principles and React best practices.",
+      image: escoLogo,
+      techStack: ["Next.js", "MongoDB", "Clean Architecture"],
+      link: "#",
+    },
+    {
+      projectTitle: "Filtracheck App",
+      description:
+        "Developed a high-performance cross-platform mobile utility for laboratory professionals to automate complex chemical safety calculations. Engineered custom algorithms to generate precise product recommendations based on safety requirements.",
+      image: escoLogo,
+      techStack: ["Flutter", "Dart"],
+      link: "#",
+    },
+    {
+      projectTitle: "Translations Feature for Corporate Website",
+      description:
+        "Architected a custom hybrid localization system to manage multi-language content across the corporate web ecosystem. Integrated DeepL API for automated high-quality translations and built a CMS interface for manual overrides.",
+      image: escoLogo,
+      techStack: ["Laravel", "Vue.js", "DeepL API", "MySQL"],
+      link: "#",
+    },
+    {
+      projectTitle: "Internal Corporate Chatbot",
+      description:
+        "Built a full-stack AI-driven analytics chatbot featuring Role-Based Access Control (RBAC) for executive and sales teams. Enabled natural language querying of real-time financial data, streamlining the generation of automated revenue reports.",
+      image: escoLogo,
+      techStack: ["Next.js", "Express", "OpenAI API"],
+      link: "#",
+    },
+    {
+      projectTitle: "Approval Web App",
+      description:
+        "Designed and implemented an internal validation system to replace manual database inspections with a centralized monitoring dashboard. Enhanced data integrity and operational efficiency by allowing stakeholders to review and approve critical records.",
+      image: escoLogo,
+      techStack: ["Next.js", "Express", "Node.js"],
+      link: "#",
+    },
+    {
+      projectTitle: "Freshbasket - Online Groceries Website",
+      description:
+        "Developed a scalable e-commerce platform tailored for the Indonesian grocery market, focusing on high availability and user convenience. Implemented location-based product listings and optimized search filters.",
+      image: githubLogo,
+      techStack: ["Next.js", "TailwindCSS"],
+      link: "#",
+    },
+    {
+      projectTitle: "Event Management Platform",
+      description:
+        "Created a comprehensive ticketing and event discovery platform, enabling promoters to manage events and users to purchase tickets seamlessly. Integrated secure authentication and dynamic promoter dashboards.",
+      image: githubLogo,
+      techStack: ["Next.js", "Node.js"],
+      link: "#",
+    },
+    {
+      projectTitle: "Company Profile Website",
+      description:
+        "Developed a modern, professional web presence for a corporate entity, focusing on brand identity and seamless information architecture. Implemented a fully responsive design and optimized asset delivery.",
+      image: githubLogo,
+      techStack: ["React", "TailwindCSS"],
+      link: "#",
+    },
+    {
+      projectTitle: "Auto Insight – Blog",
+      description:
+        "Engineered a dynamic automotive industry blog utilizing a Headless CMS (Contentful) for streamlined content delivery and management. Optimized for performance and SEO, ensuring fast loading times.",
+      image: githubLogo,
+      techStack: ["Next.js", "Contentful CMS", "Vercel"],
+      link: "#",
+    },
+    {
+      projectTitle: "Personal Portfolio Website",
+      description:
+        "Engineered a high-performance personal brand showcase featuring responsive design and fluid interactive animations to demonstrate technical proficiency and project history. Optimized for SEO and fast loading times.",
+      image: userProfile,
+      techStack: ["Next.js", "TailwindCSS", "Framer Motion"],
       link: "#",
     },
     {
       projectTitle: "Find House App",
       description:
-        "Starting from the basics, I learned how to build an application designed to help people find rental accommodations (kos-kosan) worldwide. The app integrates with APIs to store crucial data, such as property details and more. Additionally, I gained hands-on experience in transforming designs from Figma into functional code using Flutter SDK, Visual Studio Code, and Dart.",
+        "Built a dynamic real estate discovery application that simplifies the property searching process with integrated map views and advanced filtering. optimized app performance to handle high-resolution image rendering.",
       image: findHouseApp,
-      techStack: ["Dart", "Flutter", "Figma"],
+      techStack: ["Flutter", "Dart"],
+      link: "#",
+    },
+    {
+      projectTitle: "KampusGratis – Learning Management System",
+      description:
+        "Developed a comprehensive cross-platform LMS mobile application aimed at democratizing education across Indonesia. Engineered a seamless user interface for content delivery, ensuring a stable and intuitive learning experience.",
+      image: mknowsLogo,
+      techStack: ["Flutter", "Dart"],
+      link: "#",
+    },
+    {
+      projectTitle: "Sarang Dating App",
+      description:
+        "Architected a high-performance dating application featuring advanced matching algorithms and a secure, real-time end-to-end chatting system. Focused on delivering a streamlined user journey and robust data privacy.",
+      image: sarangApp,
+      techStack: ["Flutter", "Dart"],
+      link: "#",
+    },
+    {
+      projectTitle: "FavFood’s – iOS Food Ordering Application",
+      description:
+        "Developed a native iOS application designed for high-speed food and beverage ordering from local vendors. Implemented a user-friendly interface with extensive menu customization features and a simplified checkout flow.",
+      image: foodApp,
+      techStack: ["SwiftUI", "Swift"],
       link: "#",
     },
   ];

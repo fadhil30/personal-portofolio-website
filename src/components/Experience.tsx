@@ -1,40 +1,39 @@
 import mknowsLogo from "../assets/mknows-logo.svg";
-import techvisionLogo from "../assets/techvision-logo.png";
-import googleLogo from "../assets/google-logo.png";
+import escoLogo from "../assets/esco-logo.svg";
 
 export default function Experience() {
   const experiences = [
     {
-      company: "M-Knows Consulting",
+      company: "ESCO Lifescience",
+      companyLogo: escoLogo,
+      role: "Jr. Web Developer",
+      period: "Jun 2025 - Present",
+      description: [
+        "Web Development (Laravel, Vue.js): Leading the maintenance and feature enhancement of the main corporate website. Engineered a custom hybrid translation system integrated with the DeepL API, replacing standard Google Translate to provide high-accuracy localization for technical scientific content.",
+        'Mobile Development (Flutter): Spearheaded the development of "Filtracheck," a specialized cross-platform mobile application. Implemented complex chemical calculation algorithms to provide automated, tailored product recommendations based on strict user safety requirements.',
+        "System Optimization: Improved website performance and SEO by optimizing asset delivery and refining database queries in a Laravel-based environment.",
+      ],
+    },
+    {
+      company: "ESCO Lifescience",
+      companyLogo: escoLogo,
+      role: "Software Engineer Intern",
+      period: "Feb 2025 – May 2025",
+      description: [
+        "Assisted the engineering team in developing internal web tools using React and Node.js.",
+        "Contributed to the migration of legacy components to modern frameworks, ensuring better code maintainability and user interface consistency.",
+        "Participated in daily stand-ups and sprint planning, gaining hands-on experience in Agile development methodologies.",
+      ],
+    },
+    {
+      company: "M-KNOWS CONSULTING",
       companyLogo: mknowsLogo,
-      role: "iOS Developer",
-      period: "Feb 2023 - Jul 2023",
+      role: "iOS Developer Intern",
+      period: "Feb 2023 – Jun 2023",
       description: [
-        "Developing KampusGratis App",
-        "Creating various features",
-        "Deployment to AppStore",
-      ],
-    },
-    {
-      company: "TechVision Solution",
-      companyLogo: techvisionLogo,
-      role: "Frontend Developer",
-      period: "Jun 2022 - Aug 2022",
-      description: [
-        "Collaborated with UI/UX team to design responsive web applications",
-        "Implemented reusable components using React.js",
-        "Optimized performance for faster load times",
-      ],
-    },
-    {
-      company: "Google",
-      companyLogo: googleLogo,
-      role: "Full Stack Developer",
-      period: "Mar 2021 - May 2022",
-      description: [
-        "Designed and built end-to-end web applications",
-        "Managed cloud infrastructure on AWS",
-        "Ensured application security through rigorous testing",
+        'LMS Development: Contributed to the full-stack development of "Kampus Gratis," a large-scale Learning Management System platform aimed at providing accessible education across Indonesia.',
+        "Feature Engineering: Engineered core functionalities for both user and administrative interfaces, ensuring seamless navigation and efficient content delivery for thousands of active learners.",
+        "Collaborative Development: Worked closely with cross-functional teams in an Agile environment to identify and resolve technical bottlenecks, significantly improving platform stability and user engagement.",
       ],
     },
   ];
